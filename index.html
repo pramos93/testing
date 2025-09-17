@@ -1,21 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-</head>
-<body>
- <p id="demo"></p>
- <script>
-   const url = window.location.href;
-   const params = Object.fromEntries(new URL(url).searchParams.entries());
-   document.getElementById("demo").innerHTML = "Background image:" + params.background_image_url;
- </script>
- 
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
   <meta charset="UTF-8">
   <title>Iframe Content</title>
   <style>
@@ -38,6 +23,8 @@
 </head>
 <body>
   <div class="box">
+    <h1>Hello from inside an iframe!</h1>
+    <p>You can customize this page however you’d like.</p>
     <p id="background"></p>
    <p id="logoimage"></p>
    <p id="title"></p>
