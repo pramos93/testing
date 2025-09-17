@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <script>
-   const url = window.location.href;
-const params = Object.fromEntries(new URL(url).searchParams.entries());
- </script>
 </head>
 <body>
  <script>
+     const url = window.location.href;
+   const params = Object.fromEntries(new URL(url).searchParams.entries());
    document.getElementById("demo").innerHTML = "Background image:" + params.background_image_url;
  </script>
 </body>
